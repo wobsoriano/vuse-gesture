@@ -1,17 +1,17 @@
 {
-  "name": "pkg-name",
+  "name": "@wobsoriano/vue-gesture",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.2.1",
   "description": "",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/pkg-name#readme",
+  "homepage": "https://github.com/wobsoriano/vue-gesture#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/pkg-name.git"
+    "url": "git+https://github.com/wobsoriano/vue-gesture.git"
   },
-  "bugs": "https://github.com/wobsoriano/pkg-name/issues",
+  "bugs": "https://github.com/wobsoriano/vue-gesture/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
