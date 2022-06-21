@@ -1,5 +1,8 @@
 # vuse-gesture
 
+[![npm (tag)](https://img.shields.io/npm/v/vuse-gesture?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/vuse-gesture) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/vuse-gesture?style=flat&colorA=000000&colorB=000000) ![NPM](https://img.shields.io/npm/l/vuse-gesture?style=flat&colorA=000000&colorB=000000)
+
+
 vuse-gesture is a Vue 3 library that lets you bind richer mouse and touch events to any component or view. With the data you receive, it becomes trivial to set up gestures, and often takes no more than a few lines of code.
 
 You can use it stand-alone, but to make the most of it you should combine it with an animation library like [vue-use-spring](https://github.com/posva/vue-use-spring), though you can most certainly use any other.
