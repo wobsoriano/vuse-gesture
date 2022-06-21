@@ -8,6 +8,41 @@ import type {
 } from '@use-gesture/core/types'
 import { watchEffect } from 'vue'
 
+type Dict = Record<string, string>
+
+function toCase(txt: string) {
+  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+}
+
+const eventMap = {
+  onKeyDown: 'onKeydown',
+  onKeyup: 'onKeyup',
+  onPointerCancel: 'onPointercancel',
+  onPointerDown: 'onPointerdown',
+  onPointerMove: 'onPointermove',
+  onPointerUp: 'onPointerup',
+}
+
+function toVueProp(prop: string) {
+  if (prop in eventMap) {
+    // @ts-expect-error: Internal
+    return eventMap[prop]
+  }
+
+  if (prop.startsWith('on'))
+    return `on${toCase(prop.substr(2))}`
+
+  return prop.toLowerCase()
+}
+
+export const normalizeProps = (props: Dict) => {
+  const normalized: Dict = {}
+  for (const key in props)
+    normalized[toVueProp(key)] = props[key]
+
+  return normalized
+}
+
 type HookReturnType<Config extends GenericOptions> = Config['target'] extends object
   ? void
   : (...args: any[]) => ReactDOMAttributes

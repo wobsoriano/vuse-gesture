@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "@wobsoriano/vue-gesture": "workspace:*",
+    "vue": "^3.2.25",
+    "vue-use-spring": "^0.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",

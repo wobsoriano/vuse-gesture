@@ -1,12 +1,21 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import { useSpring } from 'vue-use-spring'
+import { normalizeProps, useDrag } from '@wobsoriano/vue-gesture'
+import { onMounted } from 'vue'
+
+const position = useSpring({ x: 0, y: 0 })
+
+const bind = useDrag(({ down, movement: [mx, my] }) => {
+  console.log(mx, my, down)
+  position.x = down ? mx : 0
+  position.y = down ? my : 0
+})
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div id="test" v-bind="normalizeProps(bind())" :style="{ touchAction: 'none', transform: `translate(${position.x}px, ${position.y}px)` }">
+    Hello Worlds
+  </div>
 </template>
 
 <style>
@@ -17,5 +26,11 @@ import HelloWorld from './components/HelloWorld.vue'
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#test {
+  background: red;
+  height: 100px;
+  width: 200px;
 }
 </style>
