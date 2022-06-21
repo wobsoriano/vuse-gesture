@@ -30,7 +30,7 @@ function toVueProp(prop: string) {
   return prop
 }
 
-export const normalizeProps = (props: Dict) => {
+export const normalizeProps = (props: Dict = {}) => {
   const normalized: Dict = {}
   for (const key in props)
     normalized[toVueProp(key)] = props[key]
