@@ -11,7 +11,17 @@
     "url": "git+https://github.com/wobsoriano/vuse-gesture.git"
   },
   "bugs": "https://github.com/wobsoriano/vuse-gesture/issues",
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "composables",
+    "hooks",
+    "wheel",
+    "drag",
+    "scroll",
+    "zoom",
+    "gestures",
+    "pinch"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
