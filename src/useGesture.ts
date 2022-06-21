@@ -5,7 +5,7 @@ import { createUseGesture } from './createUseGesture'
 /**
  * @public
  *
- * The most complete gesture hook, allowing support for multiple gestures.
+ * The most complete gesture composable, allowing support for multiple gestures.
  *
  * @param {GestureHandlers} handlers - an object with on[Gesture] keys containg gesture handlers
  * @param {UseGestureConfig} config - the full config object

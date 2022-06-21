@@ -3,7 +3,7 @@ import type { EventTypes, Handler, UserDragConfig } from '@use-gesture/core/type
 import { useRecognizers } from './useRecognizers'
 
 /**
- * Drag hook.
+ * Drag composable.
  *
  * @param {Handler<'drag'>} handler - the function fired every time the drag gesture updates
  * @param {UserDragConfig} config - the config object including generic options and drag options

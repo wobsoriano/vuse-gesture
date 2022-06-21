@@ -3,7 +3,7 @@ import type { EventTypes, Handler, UserScrollConfig } from '@use-gesture/core/ty
 import { useRecognizers } from './useRecognizers'
 
 /**
- * Scroll hook.
+ * Scroll composable.
  *
  * @param {Handler<'scroll'>} handler - the function fired every time the scroll gesture updates
  * @param {UserScrollConfig} config - the config object including generic options and scroll options

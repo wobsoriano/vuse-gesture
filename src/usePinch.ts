@@ -3,7 +3,7 @@ import type { EventTypes, Handler, UserPinchConfig } from '@use-gesture/core/typ
 import { useRecognizers } from './useRecognizers'
 
 /**
- * Pinch hook.
+ * Pinch composable.
  *
  * @param {Handler<'pinch'>} handler - the function fired every time the pinch gesture updates
  * @param {UserPinchConfig} config - the config object including generic options and pinch options

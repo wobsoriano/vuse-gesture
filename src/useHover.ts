@@ -3,7 +3,7 @@ import type { EventTypes, Handler, UserHoverConfig } from '@use-gesture/core/typ
 import { useRecognizers } from './useRecognizers'
 
 /**
- * Hover hook.
+ * Hover composable.
  *
  * @param {Handler<'hover'>} handler - the function fired every time the hover gesture updates
  * @param {UserHoverConfig} config - the config object including generic options and hover options

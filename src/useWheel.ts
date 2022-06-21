@@ -3,7 +3,7 @@ import type { EventTypes, Handler, UserWheelConfig } from '@use-gesture/core/typ
 import { useRecognizers } from './useRecognizers'
 
 /**
- * Wheel hook.
+ * Wheel composable.
  *
  * @param {Handler<'wheel'>} handler - the function fired every time the wheel gesture updates
  * @param {UserWheelConfig} config - the config object including generic options and wheel options
