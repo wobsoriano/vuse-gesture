@@ -13,7 +13,7 @@ npm install @wobsoriano/use-gesture
 ## Usage
 
 ```html
-<script setup lang="ts">
+<script setup>
 import { useSpring } from 'vue-use-spring'
 import { normalizeProps, useDrag } from '@wobsoriano/use-gesture'
 
@@ -28,7 +28,7 @@ const bind = useDrag(({ down, movement: [mx, my] }) => {
 <template>
   <div
     id="box"
-    v-bind="normalizeProps(bind?.())"
+    v-bind="normalizeProps(bind())"
     :style="{
       touchAction: 'none',
       transform: `translate(${position.x}px, ${position.y}px)`,
