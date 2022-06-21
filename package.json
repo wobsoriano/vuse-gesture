@@ -2,7 +2,7 @@
   "name": "vuse-gesture",
   "version": "0.0.2",
   "packageManager": "pnpm@7.2.1",
-  "description": "",
+  "description": "Bread n butter utility for component-tied mouse/touch gestures in Vue.",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/wobsoriano/vuse-gesture#readme",
