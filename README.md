@@ -1,11 +1,41 @@
-# library-starter
+# use-gesture
 
-Features:
+use-gesture is a library that lets you bind richer mouse and touch events to any component or view. With the data you receive, it becomes trivial to set up gestures, and often takes no more than a few lines of code.
 
-- Package manager [pnpm](https://pnpm.js.org/), safe and fast
-- Execute TypeScript with [tsx](https://github.com/esbuild-kit/tsx)
-- Bundle with [tsup](https://github.com/egoist/tsup)
-- Test with [vitest](https://vitest.dev)
+You can use it stand-alone, but to make the most of it you should combine it with an animation library like [vue-use-spring](https://github.com/posva/vue-use-spring), though you can most certainly use any other.
+
+## Installation
+
+```bash
+npm install @wobsoriano/use-gesture
+```
+
+## Usage
+
+```html
+<script setup lang="ts">
+import { useSpring } from 'vue-use-spring'
+import { normalizeProps, useDrag } from '@wobsoriano/use-gesture'
+
+const position = useSpring({ x: 0, y: 0 })
+
+const bind = useDrag(({ down, movement: [mx, my] }) => {
+  position.x = down ? mx : 0
+  position.y = down ? my : 0
+})
+</script>
+
+<template>
+  <div
+    id="box"
+    v-bind="normalizeProps(bind?.())"
+    :style="{
+      touchAction: 'none',
+      transform: `translate(${position.x}px, ${position.y}px)`,
+    }"
+  />
+</template>
+```
 
 ## License
 

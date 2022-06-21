@@ -14,7 +14,10 @@ const bind = useDrag(({ down, movement: [mx, my] }) => {
   <div
     id="box"
     v-bind="normalizeProps(bind?.())"
-    :style="{ touchAction: 'none', transform: `translate(${position.x}px, ${position.y}px)` }"
+    :style="{
+      touchAction: 'none',
+      transform: `translate(${position.x}px, ${position.y}px)`,
+    }"
   />
 </template>
 
