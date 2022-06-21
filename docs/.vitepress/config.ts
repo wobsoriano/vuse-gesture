@@ -10,10 +10,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wobsoriano/vuse-gesture' },
     ],
-    // repo: 'wobsoriano/lexical-vue',
-    // docsDir: 'docs',
-    // editLinks: true,
-    // editLinkText: 'Edit this page on GitHub',
     lastUpdatedText: 'Last Updated',
     // nav: [
     //   { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },

@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/getting-started
+      link: /about/introduction
     - theme: alt
       text: View on GitHub
       link: https://github.com/wobsoriano/vuse-gesture
