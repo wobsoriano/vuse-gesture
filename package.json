@@ -34,7 +34,10 @@
     "release": "bumpp && npm publish",
     "start": "tsx src/index.ts",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "peerDependencies": {
     "vue": ">=3.2.0"
@@ -52,6 +55,7 @@
     "tsx": "^3.4.3",
     "typescript": "^4.7.4",
     "vite": "^2.9.12",
+    "vitepress": "1.0.0-alpha.2",
     "vitest": "^0.15.1",
     "vue": "^3.2.37"
   },
