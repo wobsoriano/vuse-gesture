@@ -20,7 +20,11 @@ const eventMap = {
   onPointerCancel: 'onPointercancel',
   onPointerDown: 'onPointerdown',
   onPointerMove: 'onPointermove',
+  onPointerEnter: 'onPointerenter',
+  onPointerLeave: 'onPointerleave',
   onPointerUp: 'onPointerup',
+  onWheel: 'onWheel',
+  onScroll: 'onScroll',
 }
 
 function toVueProp(prop: string) {
