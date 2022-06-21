@@ -10,11 +10,7 @@ import { watchEffect } from 'vue'
 
 type Dict = Record<string, string>
 
-function toCase(txt: string) {
-  return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-}
-
-const eventMap = {
+const eventMap: Dict = {
   onKeyDown: 'onKeydown',
   onKeyup: 'onKeyup',
   onPointerCancel: 'onPointercancel',
@@ -28,15 +24,10 @@ const eventMap = {
 }
 
 function toVueProp(prop: string) {
-  if (prop in eventMap) {
-    // @ts-expect-error: Internal
+  if (prop in eventMap)
     return eventMap[prop]
-  }
 
-  if (prop.startsWith('on'))
-    return `on${toCase(prop.substr(2))}`
-
-  return prop.toLowerCase()
+  return prop
 }
 
 export const normalizeProps = (props: Dict) => {
