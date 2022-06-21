@@ -1,16 +1,16 @@
 {
-  "name": "@wobsoriano/use-gesture",
+  "name": "vuse-gesture",
   "version": "0.0.1",
   "packageManager": "pnpm@7.2.1",
   "description": "",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/use-gesture#readme",
+  "homepage": "https://github.com/wobsoriano/vuse-gesture#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/use-gesture.git"
+    "url": "git+https://github.com/wobsoriano/vuse-gesture.git"
   },
-  "bugs": "https://github.com/wobsoriano/use-gesture/issues",
+  "bugs": "https://github.com/wobsoriano/vuse-gesture/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {

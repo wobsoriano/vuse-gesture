@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useSpring } from 'vue-use-spring'
-import { normalizeProps, useDrag } from '@wobsoriano/use-gesture'
+import { normalizeProps, useDrag } from 'vuse-gesture'
 
 const position = useSpring({ x: 0, y: 0 })
 
